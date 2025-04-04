@@ -1,0 +1,222 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container */
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ffff;
+  border-radius: 12px;
+  
+}
+
+.hero-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 16px;
+  text-shadow: black 8px;
+}
+
+.hero-subtext {
+  font-size: 0.6rem;
+  color: #555555;
+  margin-bottom: 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background-color: #0056b3;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #003d82;
+  transform: scale(1.06);
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  font-size: 1.0rem;
+  padding: 14px;
+  color: #444444;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* AI Tools Section */
+.ai-tools {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.tools-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tool-card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.tool-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tool-description {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 15px;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+/* Why Choose Section */
+.why-choose {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.why-description {
+  font-size: 1.0rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #444444;
+  line-height: 1.8;
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.why-list li {
+  font-size: 0.8rem;
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222222;
+}
+
+.cta-subtext {
+  font-size: 0.7rem;
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  .tools-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-heading {
+    font-size: 1.6rem;
+  }
+}
