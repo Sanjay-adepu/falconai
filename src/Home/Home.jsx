@@ -50,51 +50,70 @@ const Home = () => {
           </ul>          
         </section>          
 
-     <section className="comparison-section">
+    <section className="comparison-section">
   <h2 className="section-heading">How FalconAI Stands Out</h2>
   <table className="comparison-table">
     <thead>
       <tr>
         <th>Feature</th>
-        <th>Falcon</th>
+        <th>FalconAI</th>
         <th>Other Tools</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Slide Generation Time</td>
-        <td><strong>12 seconds</strong></td>
-        <td>30 sec – 1 min</td>
+        <td data-label="Feature">Slide Generation Time</td>
+        <td data-label="FalconAI">12 seconds</td>
+        <td data-label="Other Tools">30 sec – 1 min</td>
       </tr>
       <tr>
-        <td>Editing Time</td>
-        <td><strong>30 seconds</strong></td>
-        <td>30 sec – 1.5 min</td>
+        <td data-label="Feature">Editing Time</td>
+        <td data-label="FalconAI">30 seconds</td>
+        <td data-label="Other Tools">30 sec – 1.5 min</td>
       </tr>
       <tr>
-        <td>Download Time</td>
-        <td><strong>20 seconds</strong></td>
-        <td>~30 seconds</td>
+        <td data-label="Feature">Download Time</td>
+        <td data-label="FalconAI">20 seconds</td>
+        <td data-label="Other Tools">~30 seconds</td>
       </tr>
       <tr>
-        <td>Watermark-Free</td>
-        <td><strong>Yes</strong></td>
-        <td>Often branded</td>
+        <td data-label="Feature">Unlimited Slides</td>
+        <td data-label="FalconAI">Yes</td>
+        <td data-label="Other Tools">Often limited</td>
       </tr>
       <tr>
-        <td>Offline Export (.pptx/PDF)</td>
-        <td><strong>Available Instantly</strong></td>
-        <td>Yes</td>
+        <td data-label="Feature">Image Customization</td>
+        <td data-label="FalconAI">Add / Replace / Remove</td>
+        <td data-label="Other Tools">Limited / Fixed</td>
       </tr>
       <tr>
-        <td>Pricing</td>
-        <td><strong>₹5 per download</strong></td>
-        <td>Free / Paid tiers</td>
+        <td data-label="Feature">Theme & Font Customization</td>
+        <td data-label="FalconAI">Multiple Themes & Fonts</td>
+        <td data-label="Other Tools">Basic or No Options</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Watermark-Free</td>
+        <td data-label="FalconAI">Yes</td>
+        <td data-label="Other Tools">Often branded</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Offline Export (.pptx/PDF)</td>
+        <td data-label="FalconAI">Available Instantly</td>
+        <td data-label="Other Tools">Yes</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">AI Suggestions</td>
+        <td data-label="FalconAI">Yes</td>
+        <td data-label="Other Tools">Rarely available</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Pricing</td>
+        <td data-label="FalconAI">₹5 per download</td>
+        <td data-label="Other Tools">Free / Paid tiers</td>
       </tr>
     </tbody>
   </table>
 </section>
-
 
 
 
