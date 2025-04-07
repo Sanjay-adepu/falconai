@@ -375,7 +375,7 @@ return (
     {slides.length > 0 && (      
       <>      
         <h2>📝 Your Presentation:</h2>      
-<p class="note">Note: You can easily edit slide content, including titles, text, and colors.</p>    
+<p class="note"><span id="c"> Note: </span>You can easily edit slide content, including titles, text, and colors. If you don't want an image in a slide, you can remove it — it won't appear in the final PPT.</p>    
          
         <div className="slide-grid">      
 {slides.map((slide, slideIndex) => {    
