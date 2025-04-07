@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Home/Home";
 import Dashboard from "./PPT/PPT.jsx";
-
+import Tv from "./Tv/AndroidTVController.jsx";
 import Search from "./Search/Search.jsx";
 import Policy from "./Policy/PrivacyPolicy.jsx";
 import Terms from "./Terms/TermsConditions.jsx";
@@ -16,6 +16,7 @@ const App = () => {
       <Routes>
 
   <Route path="/" element={<Home />} />
+  <Route path="/Tv" element={<Tv />} />
   <Route path="/download" element={<Downloadppt/>} />
    <Route path="/contact" element={<Contact/>} />
   
