@@ -50,50 +50,7 @@ const Home = () => {
           </ul>          
         </section>          
 
-   <section className="comparison-section">
-  <h2 className="section-heading">How FalconAI Stands Out</h2>
-  <table className="comparison-table">
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>FalconAI</th>
-        <th>Other Tools</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td data-label="Feature">Slide Generation Time</td>
-        <td data-label="FalconAI"><strong>12 seconds</strong></td>
-        <td data-label="Other Tools">30 sec – 1 min</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Editing Time</td>
-        <td data-label="FalconAI"><strong>30 seconds</strong></td>
-        <td data-label="Other Tools">30 sec – 1.5 min</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Download Time</td>
-        <td data-label="FalconAI"><strong>20 seconds</strong></td>
-        <td data-label="Other Tools">~30 seconds</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Watermark-Free</td>
-        <td data-label="FalconAI"><strong>Yes</strong></td>
-        <td data-label="Other Tools">Often branded</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Offline Export (.pptx/PDF)</td>
-        <td data-label="FalconAI"><strong>Available Instantly</strong></td>
-        <td data-label="Other Tools">Yes</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Pricing</td>
-        <td data-label="FalconAI"><strong>₹5 per download</strong></td>
-        <td data-label="Other Tools">Free / Paid tiers</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+  
 
 
         {/* Call to Action Section */}          
