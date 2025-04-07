@@ -50,6 +50,56 @@ const Home = () => {
           </ul>          
         </section>          
 
+     <section className="comparison-section">
+  <h2 className="section-heading">How FalconAI Stands Out</h2>
+  <table className="comparison-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Falcon</th>
+        <th>Other Tools</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Slide Generation Time</td>
+        <td><strong>12 seconds</strong></td>
+        <td>30 sec – 1 min</td>
+      </tr>
+      <tr>
+        <td>Editing Time</td>
+        <td><strong>30 seconds</strong></td>
+        <td>30 sec – 1.5 min</td>
+      </tr>
+      <tr>
+        <td>Download Time</td>
+        <td><strong>20 seconds</strong></td>
+        <td>~30 seconds</td>
+      </tr>
+      <tr>
+        <td>Watermark-Free</td>
+        <td><strong>Yes</strong></td>
+        <td>Often branded</td>
+      </tr>
+      <tr>
+        <td>Offline Export (.pptx/PDF)</td>
+        <td><strong>Available Instantly</strong></td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Pricing</td>
+        <td><strong>₹5 per download</strong></td>
+        <td>Free / Paid tiers</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+
+
+
+
         {/* Call to Action Section */}          
         <section className="cta-section">          
           <h2 className="cta-heading">Start Creating AI-Powered Presentations Now!</h2>          
