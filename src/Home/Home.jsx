@@ -3,7 +3,7 @@ import "./Home.css";
 import Navbar from "../Navbar/Navbar.jsx";  
 
 const Home = () => {  
-  return (  
+  return (   
     <>  
       <Navbar />  
 
