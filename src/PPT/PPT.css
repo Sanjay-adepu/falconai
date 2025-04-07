@@ -18,7 +18,9 @@ margin-top: 100px;
 .hidden-file-input {
   display: none;
 }
-
+#c{
+color:black;
+}
 #para{
   color:black;
   font-size:13px;
