@@ -1,28 +1,28 @@
 .terms-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
   
   border-radius: 10px;
-  margin-top:50px !important;
+  margin-top:100px !important;
   
 }
 
 .terms-container h1 {
-  font-size: 28px;
+  font-size: 23px;
   color: #2c3e50;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .terms-container p {
-  font-size: 16px;
+  font-size: 13px;
   color: #555;
   line-height: 1.6;
 }
 
 .terms-container h2 {
-  font-size: 22px;
+  font-size: 20px;
   color: #1a73e8;
   margin-top: 20px;
 }
@@ -32,7 +32,7 @@
 }
 
 .terms-container ul li {
-  font-size: 16px;
+  font-size: 14px;
   color: #444;
   margin-bottom: 8px;
 }
