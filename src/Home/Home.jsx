@@ -11,9 +11,9 @@ const Home = () => {
         {/* Hero Section */}          
         <section className="hero">          
           <h1 className="hero-heading"> Create AI-Generated Presentations in Less Than 1 Minute!</h1>          
-          <p className="hero-subtext">          
-            FalconAI is an AI-powered platform that instantly converts text into professional presentations, saving hours of manual work. Whether you're a student, educator, or business professional, FalconAI helps you create **high-quality, customizable** presentations in under a minute!      
-          </p>          
+       <p className="hero-subtext">          
+  FalconAI is an AI-powered platform that instantly converts text into professional presentations, saving hours of manual work. Whether you're a student, educator, or business professional, FalconAI helps you create <strong>high-quality, customizable</strong> presentations in under a minute! With intuitive design tools, smart content suggestions, and real-time editing capabilities, FalconAI empowers you to focus on ideas while we handle the visuals—making your workflow faster, smarter, and more impactful.
+</p>
           <Link to="/dashboard" className="btn-primary">Get Started</Link>          
         </section>          
 
