@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";  
 import "./Home.css";  
 import Navbar from "../Navbar/Navbar.jsx";  
+import Footer from "./Footer.jsx";
 
 const Home = () => {  
   return (   
@@ -142,7 +143,8 @@ const Home = () => {
           <p className="cta-subtext">Join thousands of users who are transforming the way they present. Try FalconAI today!</p>          
           <Link to="/dashboard" className="btn-primary">Get Started</Link>          
         </section>          
-      </div>          
+      </div>       
+   <Footer/>   
     </>  
   );  
 };  
