@@ -224,3 +224,159 @@ body {
     font-size: 1.6rem;
   }
 }
+/* Blog Section */
+.blog-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.blog-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+.blog-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-summary {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.faq-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 14px;
+}
+
+.faq-question {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.faq-answer {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Case Studies Section */
+.case-studies {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.case-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.case-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.case-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.case-card:hover {
+  transform: translateY(-6px);
+}
+
+.case-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.case-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Updates */
+@media (max-width: 768px) {
+  .blog-grid,
+  .case-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card,
+  .case-card {
+    max-width: 100%;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.85rem;
+  }
+}
