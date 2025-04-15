@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
-
-
-
+  .carousel-wrapper,
+.carousel-image{
+    display: none;
+  }
 
 /* General Styles */
 body {
@@ -207,11 +208,11 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-heading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .hero-subtext {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: justify;
   }
 
@@ -357,6 +358,7 @@ body {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.6;
+  text-align: justify !important;
 }
 
 /* Responsive Updates */
@@ -379,4 +381,37 @@ body {
   .faq-answer {
     font-size: 0.85rem;
   }
+  .carousel-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  display: block;
+  
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 12px;
+}
+
+#carousel-slide-image {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 }
