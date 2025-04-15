@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <img src="./falcon.jpg" alt="FalconAI Logo" className="logo-img" />
+          <img src="./file_00000000a16061f7b8821c2367ff4369_conversation_id=67fe5f03-8e98-800f-a3c6-6c55f1a4653e&message_id=82c616d9-5db9-4a25-b1ee-9d5dcd9a0c3f.png" alt="FalconAI Logo" className="logo-img" />
           <span>Falcon</span>
         </Link>
 
