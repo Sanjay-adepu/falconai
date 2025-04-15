@@ -6,12 +6,15 @@ import Footer from "../Footer.jsx";
 
 const Home = () => {  
   const images = [
-  "/Screenshot_20250414-182532.jpg",
+  "https://res.cloudinary.com/dppiuypop/image/upload/v1744734481/uploads/xayqocujbuxvbsji29rl.jpg",
 
-  "/Screenshot_20250414-182532~3.jpg",
-  "/Screenshot_20250414-182542.jpg",
-  "/Screenshot_20250414-182542~2.jpg",
-  "/Screenshot_20250414-182542~3.jpg"
+ "https://res.cloudinary.com/dppiuypop/image/upload/v1744734565/uploads/etfbxtg6uwjtrw0yjm4g.jpg",
+  "https://res.cloudinary.com/dppiuypop/image/upload/v1744734588/uploads/xam5cvriqypddliexom9.jpg",
+  "https://res.cloudinary.com/dppiuypop/image/upload/v1744734612/uploads/ehrfkru4xzffou8qcka1.jpg",
+  "https://res.cloudinary.com/dppiuypop/image/upload/v1744734746/uploads/gdiybb044rqcrzjfugng.jpg",
+"https://res.cloudinary.com/dppiuypop/image/upload/v1744734808/uploads/stur5jtbjejhbdfmwmmc.jpg",
+"https://res.cloudinary.com/dppiuypop/image/upload/v1744734835/uploads/j4g7airfuwuvibsqjnqb.jpg",
+"https://res.cloudinary.com/dppiuypop/image/upload/v1744734855/uploads/xvon6yihzhzcxzi8twng.jpg"
 ];
 
 const [currentIndex, setCurrentIndex] = useState(0);
