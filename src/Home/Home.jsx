@@ -1,9 +1,40 @@
-import { Link } from "react-router-dom";  
-import "./Home.css";  
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import "./Home.css";
 import Navbar from "../Navbar/Navbar.jsx";  
 import Footer from "../Footer.jsx";
 
 const Home = () => {  
+  const images = [
+  "/Screenshot_20250414-182532.jpg",
+
+  "/Screenshot_20250414-182532~3.jpg",
+  "/Screenshot_20250414-182542.jpg",
+  "/Screenshot_20250414-182542~2.jpg",
+  "/Screenshot_20250414-182542~3.jpg"
+];
+
+const [currentIndex, setCurrentIndex] = useState(0);
+
+// Auto-slide effect
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  }, 3000); // 3 seconds
+  return () => clearInterval(interval);
+}, []);
+  
+  const goToPrevious = () => {
+  setCurrentIndex((prevIndex) =>
+    prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  );
+};
+
+const goToNext = () => {
+  setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+};
+  
+  
   return (   
     <>  
       <Navbar />  
@@ -13,10 +44,19 @@ const Home = () => {
         <section className="hero">          
           <h1 className="hero-heading"> Create AI-Generated Presentations in Less Than 1 Minute!</h1>          
           <p className="hero-subtext">          
-            FalconAI is an AI-powered platform that instantly converts text into professional presentations, saving hours of manual work. Whether you're a student, educator, or business professional, FalconAI helps you create <strong>high-quality, customizable</strong> presentations in under a minute! With intuitive design tools, smart content suggestions, and real-time editing capabilities, FalconAI empowers you to focus on ideas while we handle the visuals—making your workflow faster, smarter, and more impactful.
+            Falcon AI is an AI-powered platform that instantly converts text into professional presentations, saving hours of manual work. Whether you're a student, educator, or business professional, FalconAI helps you create <strong>high-quality, customizable</strong> presentations in under a minute! With intuitive design tools, smart content suggestions, and real-time editing capabilities, FalconAI empowers you to focus on ideas while we handle the visuals—making your workflow faster, smarter, and more impactful.
           </p>
           <Link to="/dashboard" className="btn-primary">Get Started</Link>          
-        </section>          
+        </section>         
+        
+<div className="carousel-wrapper">
+  <img 
+    src={images[currentIndex]} 
+    alt={`Slide ${currentIndex + 1}`} 
+    className="carousel-image" 
+    id="carousel-slide-image" 
+  />
+</div>
 
         {/* Features Section */}          
         <section className="features">          
