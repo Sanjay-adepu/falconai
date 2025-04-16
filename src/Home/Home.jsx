@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar.jsx";  
 import Footer from "../Footer.jsx";
+import { Helmet } from "react-helmet";
+
 
 const Home = () => {  
   const images = [
@@ -40,6 +42,48 @@ const goToNext = () => {
   
   return (   
     <>  
+    
+<Helmet>
+  <title>Falcon - AI Presentation Maker | Create PPT Slides Instantly</title>
+  <meta
+    name="description"
+    content="Falcon is a powerful AI-powered presentation tool that instantly transforms your ideas into professional PPT slides. Customize, download, and present in seconds—no design skills needed."
+  />
+  <meta
+    name="keywords"
+    content="Falcon, AI Presentation Maker, AI Slide Generator, Free PPT Creator, AI PPT Maker, Online Presentation Tool, Falcon AI, Fast PowerPoint Generator, Gamma alternative, Create Slides with AI, PPT Maker Online, AI Pitch Deck Creator, PDF to PPT, Presentation AI, Student PPT Tool, Business Presentation Generator"
+  />
+  <meta name="author" content="FalconAI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {/* Optional: Open Graph tags for social sharing */}
+  <meta property="og:title" content="Falcon - AI Presentation Maker" />
+  <meta property="og:description" content="Transform text into stunning slides in seconds. Use Falcon to create presentations faster and smarter with AI." />
+  <meta property="og:image" content="https://yourwebsite.com/falconai-preview.png" />
+  <meta property="og:url" content="https://falconai.space" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter card for better sharing */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Falcon - Fast AI-Powered PPT Maker" />
+  <meta name="twitter:description" content="Create and download presentations instantly with Falcon. AI-powered, customizable, and watermark-free." />
+  <meta name="twitter:image" content="https://yourwebsite.com/falconai-preview.png" />
+
+  {/* JSON-LD Schema for Google */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Falcon",
+        "url": "https://falconai.space"
+      }
+    `}
+  </script>
+</Helmet>
+
+     
       <Navbar />  
 
       <div className="home-page">          
