@@ -23,8 +23,7 @@ const getContrastTextColor = (bgColor) => {
 };
 
 const themes = [
-  { name: "Default", value: "default", color: "#fcfeffe0" },
-
+  
 
   { name: "Theme 1", value: "theme1", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567220/uploads/pswepd3udghnonjfrtlr.jpg" },
   { name: "Theme 2", value: "theme2", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567248/uploads/ea6wlejnwiafahhedrnw.jpg" },
