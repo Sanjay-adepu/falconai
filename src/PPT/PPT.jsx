@@ -115,7 +115,7 @@ const PPT = () => {
   const [selectedTheme, setSelectedTheme] = useState("default");
   const [titleColor, setTitleColor] = useState("");
   const [contentColor, setContentColor] = useState("");
-  const [useImages, setUseImages] = useState(true);
+  const [useImages, setUseImages] = useState(false);
 
   const removeSlideImage = (slideIndex) => {
     setSlides((prevSlides) => {
