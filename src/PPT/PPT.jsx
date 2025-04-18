@@ -105,7 +105,7 @@ const PPT = () => {
   const templateRef = useRef(null); // Add this line
 
   const [topic, setTopic] = useState("");
-  const [slideCount, setSlideCount] = useState(10);
+  const [slideCount, setSlideCount] = useState(9);
   const [previousPPTs, setPreviousPPTs] = useState([]);
   const [selectedPPT, setSelectedPPT] = useState(null);
   const [slides, setSlides] = useState([]);
