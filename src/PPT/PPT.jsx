@@ -26,7 +26,7 @@ const themes = [
   
 
   { name: "Theme 1", value: "theme1", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567220/uploads/pswepd3udghnonjfrtlr.jpg" },
-  { name: "Theme 2", value: "theme2", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567248/uploads/ea6wlejnwiafahhedrnw.jpg" },
+  { name: "Theme 2", value: "default", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567248/uploads/ea6wlejnwiafahhedrnw.jpg" },
   { name: "Theme 3", value: "theme3", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567353/uploads/jhqemev3z0r8vpykio6y.jpg" },
 
   { name: "Theme 5", value: "theme5", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567417/uploads/phrtny0vrzzcslbzxre3.jpg" },
