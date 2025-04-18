@@ -474,7 +474,7 @@ const textColor = getContrastTextColor(bgColor || "#fff");  return (
         )}               
            <div class="new">        <button onClick={saveSlides} className="save-button">💾 Save Slides</button>              
     </div>              
-    <div style={{ margin: "1rem 0", backgroundColor: "#fff8e1", padding: "1rem", borderRadius: "8px", color: "#8d6e63", fontSize: "0.7rem" }}>Note : Save the slides before download the ppt</div>            <div class="down">              
+            <div class="down">              
 <Downloadppt topic={topic}  />              
 </div>                    
 <div style={{ margin: "1rem 0", backgroundColor: "#fff8e1", padding: "1rem", borderRadius: "8px", color: "#8d6e63", fontSize: "0.6rem" }}> 🔹You can easily edit the slide content by modifying the title and text within each slide. Additionally, you can personalize the appearance by selecting different themes, adjusting the title and content colors, and even adding or removing images. All changes are applied instantly, making it simple to create visually appealing slides with ease
