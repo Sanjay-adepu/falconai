@@ -44,6 +44,10 @@ const DownloadPPT = ({ topic }) => {
           Download and modify it as needed for your presentations!
         </p>
 
+
+<div style={{ margin: "1rem 0", backgroundColor: "#fff8e1", padding: "1rem", borderRadius: "8px", color: "#8d6e63", fontSize: "0.7rem" }}>Note : Save the slides before download the ppt</div>    
+
+
         <button
           className="download-button"
           onClick={downloadPPT}
