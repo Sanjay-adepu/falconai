@@ -25,7 +25,16 @@ margin-top: 100px;
   content: "🔹";
   margin-right: 8px;
 }
-
+.slide-content-block {
+  white-space: pre-line;
+  font-size: 8px;          /* Small font size */
+  line-height: 1.8;         /* Better spacing between lines */
+  color: inherit;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  min-height: 120px;
+}
 
 
 
