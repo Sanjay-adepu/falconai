@@ -18,6 +18,18 @@ margin-top: 100px;
 .hidden-file-input {
   display: none;
 }
+
+
+
+.bullet-line::before {
+  content: "🔹";
+  margin-right: 8px;
+}
+
+
+
+
+
 #c{
 color:black;
 }
