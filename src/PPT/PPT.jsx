@@ -427,23 +427,32 @@ const textColor = getContrastTextColor(bgColor || "#fff");  return (
           style={{ color: titleColor || textColor }}              
         >              
           {slide.title}              
-        </h3>        <ul className="slide-content">              
-      {slide.content.map((point, pointIndex) => (              
-        <li              
-          key={pointIndex}              
-          contentEditable              
-          suppressContentEditableWarning              
-          onBlur={(e) => {              
-            const updatedSlides = [...slides];              
-            updatedSlides[slideIndex].content[pointIndex] = e.target.innerText;              
-            setSlides(updatedSlides);              
-          }}              
-          style={{ color: contentColor || textColor }}              
-        >              
-         🔹 {point}              
-        </li>              
-      ))}              
-    </ul>              
+        </h3>       
+   <div
+  contentEditable
+  suppressContentEditableWarning
+  onBlur={(e) => {
+    const updatedSlides = [...slides];
+    const points = e.target.innerText
+      .split("\n")
+      .map((line) => line.replace(/^🔹\s*/, "").trim()) // Just in case
+      .filter((line) => line !== "");
+    updatedSlides[slideIndex].content = points;
+    setSlides(updatedSlides);
+  }}
+  className="slide-content-block"
+>
+  {slide.content.map((point, index) => (
+    <div key={index} className="bullet-line">
+      {point}
+    </div>
+  ))}
+</div>
+
+
+
+
+     
   </div>            {/* Conditionally Show Image Section */}  
 {useImages && (  <div className="image-container">              
   {slide.image && slide.image.trim() !== "" ? ( // Ensure empty strings don't count              
