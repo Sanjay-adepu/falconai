@@ -4,6 +4,8 @@ import "./Home.css";
 import Navbar from "../Navbar/Navbar.jsx";  
 import Footer from "../Footer.jsx";
 import { Helmet } from "react-helmet";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Home = () => {  
@@ -39,6 +41,12 @@ const goToNext = () => {
   setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
 };
   
+
+
+useEffect(() => {
+  AOS.init({ duration: 1000, once: true });
+}, []);
+
   
   return (   
     <>  
@@ -96,34 +104,43 @@ const goToNext = () => {
           <Link to="/dashboard" className="btn-primary">Get Started</Link>          
         </section>         
         
-<div className="carousel-wrapper">
-  <img 
-    src={images[currentIndex]} 
-    alt={`Slide ${currentIndex + 1}`} 
-    className="carousel-image" 
-    id="carousel-slide-image" 
-  />
-</div>
+
 
         {/* Features Section */}          
-        <section className="features">          
-          <h2 className="section-heading">Powerful Features for Effortless Productivity</h2>          
-          <ul className="why-list"> 
-            <li className="feature-item"><strong>🔹 Lightning-Fast AI Response:</strong> Get real-time AI assistance in <strong>less than 12 seconds</strong>.</li>   
-            <li className="feature-item"><strong>🔹 Unlimited Slides:</strong> Create as many slides as you need without restrictions.</li> 
-            <li className="feature-item"><strong>🔹 No Watermarks:</strong> Download clean, professional slides without branding overlays.</li>  
-            <li className="feature-item"><strong>🔹 Image Customization:</strong> Add, remove, or replace images based on your needs.</li>  
-            <li className="feature-item"><strong>🔹 Theme Selection & Font Customization:</strong> Choose from various themes, title colors, and fonts.</li>  
-            <li className="feature-item"><strong>🔹 AI-Powered Slide Generation:</strong> Convert raw text into well-structured, visually appealing PowerPoint slides instantly.</li>  
-            <li className="feature-item"><strong>🔹 Instant PDF & PPTX Downloads:</strong> Save your presentations in multiple formats for easy sharing.</li>  
-            <li className="feature-item"><strong>🔹 Customization Options:</strong> Modify text, images, fonts, and colors to match your preferences.</li>  
-          </ul>          
-        </section>          
-
+     <section className="features" data-aos="fade-up">
+  <h2 className="section-heading">Powerful Features for Effortless Productivity</h2>
+  <ul className="why-list">
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="100">
+      <strong>🔹 Lightning-Fast AI Response:</strong> Get real-time AI assistance in <strong>less than 12 seconds</strong>.
+    </li>
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="200">
+      <strong>🔹 Unlimited Slides:</strong> Create as many slides as you need without restrictions.
+    </li>
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="300">
+      <strong>🔹 No Watermarks:</strong> Download clean, professional slides without branding overlays.
+    </li>
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="400">
+      <strong>🔹 Image Customization:</strong> Add, remove, or replace images based on your needs.
+    </li>
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="540">
+      <strong>🔹 Theme Selection & Font Customization:</strong> Choose from various themes, title colors, and fonts.
+    </li>
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="600">
+      <strong>🔹 AI-Powered Slide Generation:</strong> Convert raw text into well-structured, visually appealing PowerPoint slides instantly.
+    </li>
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="620">
+      <strong>🔹 Instant PDF & PPTX Downloads:</strong> Save your presentations in multiple formats for easy sharing.
+    </li>
+    <li className="feature-item" data-aos="fade-up" data-aos-delay="660">
+      <strong>🔹 Customization Options:</strong> Modify text, images, fonts, and colors to match your preferences.
+    </li>
+  </ul>
+</section>
         {/* Why Choose FalconAI Section */}          
-        <section className="why-choose">          
+      
+    <section className="why-choose" data-aos="fade-right">          
           <h2 className="section-heading">Why Choose FalconAI?</h2>          
-          <p className="why-description">      
+          <p className="why-description" data-aos="fade-up" data-aos-delay="300">      
             FalconAI is built for students, educators, and professionals who need <strong>fast, high-quality</strong> presentations. Whether you're preparing for a <strong>business meeting, academic project, or research paper</strong>, FalconAI ensures your slides are polished and engaging.      
           </p>          
           <ul className="why-list">          
@@ -134,8 +151,12 @@ const goToNext = () => {
           </ul>          
         </section>          
 
+
+     
+
         {/* Blog Section */}          
-        <section className="blog-section">          
+      
+        <section className="blog-section" data-aos="fade-up">          
           <h2 className="section-heading">Latest from Our Blog</h2>          
 
           <div className="blog-article">
@@ -164,8 +185,11 @@ const goToNext = () => {
           </div>
         </section>          
 
+
+
         {/* FAQ Section */}          
-        <section className="faq-section">          
+      
+   <section className="faq-section" data-aos="fade-right">          
           <h2 className="section-heading">Frequently Asked Questions</h2>          
 
           <div className="faq-item">
@@ -192,44 +216,50 @@ const goToNext = () => {
             <h4>Do you support code-related presentations?</h4>
             <p>Yes! FalconAI supports technical content including Python, Java, HTML, and more—ideal for developers and IT professionals.</p>
           </div>
-        </section>          
+        </section>       
+
+
+  
 
         {/* Case Study Section */}          
-        <section className="case-studies">          
+              <section className="case-studies"data-aos="fade-up" data-aos-delay="200" >          
           <h2 className="section-heading">Case Studies: Real User Success</h2>          
 
-          <div className="case-study-item">
+          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="200">
             <h4>Startup Founder Cuts Deck Creation Time by 90%</h4>
             <p>Raj, a startup founder in Bangalore, used FalconAI to generate his investor pitch deck in minutes—freeing up valuable time to polish his pitch and focus on business strategy.</p>
           </div>
 
-          <div className="case-study-item">
+          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="300">
             <h4>Teacher Saves 6 Hours a Week</h4>
             <p>Meena, a high school teacher, now prepares lesson slides in minutes. With FalconAI’s intuitive interface, she focuses more on engaging students and less on slide design.</p>
           </div>
 
-          <div className="case-study-item">
+          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="400">
             <h4>Engineering Student Impresses Professors</h4>
             <p>Ankit used FalconAI for his final year project. With professional design and AI-structured flow, his presentation stood out and got top marks from his professors.</p>
           </div>
 
-          <div className="case-study-item">
+          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="500">
             <h4>Marketing Team Boosts Productivity</h4>
             <p>A 5-member marketing team used FalconAI to create client presentations 3x faster. They’ve integrated it into their workflow and now deliver designs with faster turnaround.</p>
           </div>
 
-          <div className="case-study-item">
+          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="600">
             <h4>Freelancer Wins More Clients</h4>
             <p>Sana, a freelance content creator, added presentation services to her portfolio using FalconAI. She now delivers presentations in record time and has doubled her client base.</p>
           </div>
         </section>          
 
+        
+
         {/* Call to Action Section */}          
-        <section className="cta-section">          
+         <section className="cta-section"
+        data-aos="fade-up" data-aos-delay="200">          
           <h2 className="cta-heading">Start Creating AI-Powered Presentations Now!</h2>          
           <p className="cta-subtext">Join thousands of users who are transforming the way they present. Try FalconAI today!</p>          
           <Link to="/dashboard" className="btn-primary">Get Started</Link>          
-        </section>          
+        </section>              
       </div>       
    <Footer/>   
     </>  
