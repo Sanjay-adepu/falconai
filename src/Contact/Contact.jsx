@@ -10,7 +10,7 @@ const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     try {
-        const res = await axios.post("https://backend-6gkb.onrender.com/api/contact", formData);
+        const res = await axios.post("https://falcon-ai-backend.vercel.app/api/contact", formData);
         if (res.data.success) {
             setSuccess("Message sent successfully!");
             setFormData({ name: "", email: "", message: "" });
