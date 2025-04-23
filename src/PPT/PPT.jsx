@@ -428,7 +428,8 @@ const textColor = getContrastTextColor(bgColor || "#fff");  return (
         >              
           {slide.title}              
         </h3>       
-   <div
+   
+        <div
   contentEditable
   suppressContentEditableWarning
   onBlur={(e) => {
@@ -442,15 +443,14 @@ const textColor = getContrastTextColor(bgColor || "#fff");  return (
   }}
   className="slide-content-block"
 >
-  {slide.content.map((point, index) => (
+ {slide.content
+  .filter((point) => point.trim() !== "") // Remove empty points
+  .map((point, index) => (
     <div key={index} className="bullet-line">
       {point}
     </div>
   ))}
 </div>
-
-
-
 
      
   </div>            {/* Conditionally Show Image Section */}  
