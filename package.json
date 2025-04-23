@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.8.4",
     "bootstrap": "^5.3.3",
+    "aos": "^2.3.4",
     "express": "^5.1.0",
     "fabric": "^6.6.1",
     "framer-motion": "^12.5.0",
