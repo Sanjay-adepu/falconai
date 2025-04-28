@@ -200,7 +200,7 @@ const PPT = () => {
       if (formattedSlides.length > 0) {
         formattedSlides[0] = {
           title: `📌 Topic: ${topic}`,
-          content: ["Presented by: AI-Powered PPT Maker"],
+          content: ["Presented by: Enter Your Name"],
           image: null,
         };
       }
