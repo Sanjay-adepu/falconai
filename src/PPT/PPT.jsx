@@ -329,41 +329,50 @@ setTimeout(() => {
   </div>
 </div>
 
-<div className="color-picker-container">
-  <div className="color-picker-item">
-    <label htmlFor="titleColor">Title Color</label>
+
+<div className="settings-panel">
+  <div className="setting-group">
+    <label htmlFor="titleColor" className="setting-label">Title Color</label>
     <input
       id="titleColor"
       type="color"
       value={titleColor}
       onChange={(e) => setTitleColor(e.target.value)}
+      className="color-input"
     />
   </div>
-  <div className="color-picker-item">
-    <label htmlFor="contentColor">Content Color</label>
+
+  <div className="setting-group">
+    <label htmlFor="contentColor" className="setting-label">Content Color</label>
     <input
       id="contentColor"
       type="color"
       value={contentColor}
       onChange={(e) => setContentColor(e.target.value)}
+      className="color-input"
     />
   </div>
+
+  <div className="setting-group toggle-group">
+    <label htmlFor="imageToggle" className="setting-label">Include Images</label>
+    <div className="toggle-wrapper">
+      <input
+        type="checkbox"
+        id="imageToggle"
+        checked={useImages}
+        onChange={() => setUseImages((prev) => !prev)}
+        className="toggle-checkbox"
+      />
+      <label htmlFor="imageToggle" className="toggle-slider"></label>
+    </div>
+  
 </div>
-<div className="toggle-container">              
-  <label htmlFor="imageToggle" className="toggle-label">              
-    Include Images:              
-  </label>              
-  <div className="toggle-wrapper">              
-    <input              
-      type="checkbox"              
-      id="imageToggle"              
-      checked={useImages}              
-      onChange={() => setUseImages((prev) => !prev)}              
-      className="toggle-checkbox"              
-    />              
-    <label htmlFor="imageToggle" className="toggle-slider"></label>              
-  </div>              
-</div>        {slides.length > 0 && (                
+           
+</div> 
+
+
+
+   {slides.length > 0 && (                
   <>                
     <h2>📝 Your Presentation:</h2>  
     <div style={{ margin: "1rem 0", backgroundColor: "#fff8e1", padding: "1rem", borderRadius: "8px", color: "#2d190ee0", fontSize: "0.6rem" }}> 
