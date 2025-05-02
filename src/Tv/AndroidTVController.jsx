@@ -1,5 +1,5 @@
 import React from "react";
-import "./AndroidTvControl.css";
+import "./AndroidTVControl.css";
 const blogs = [
   {
     title: "How AI is Transforming Presentation Design",
