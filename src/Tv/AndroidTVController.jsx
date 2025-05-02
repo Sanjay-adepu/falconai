@@ -139,7 +139,6 @@ const BlogComponent = () => {
     <>
       <Navbar />
       <div className="blog-section">
-        <h2 className="blog-title">FalconAI Blog</h2>
         <div className="blog-list">
           {blogs.map((blog, index) => (
             <div key={index} className="blog-post">
