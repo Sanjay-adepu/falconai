@@ -75,6 +75,7 @@ const themes = [
 
 const PPT = () => {
   const templateRef = useRef(null); // Add this line
+const slidesRef = useRef(null);   // New ref for scrolling to slides
 
   const [topic, setTopic] = useState("");
   const [slideCount, setSlideCount] = useState(9);
@@ -166,6 +167,11 @@ const PPT = () => {
       if (response.data.success) {
         alert("Slides saved successfully!");
       }
+
+      if (slidesRef.current) {
+        slidesRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+
     } catch (error) {
       alert("Failed to save slides.");
     }
@@ -259,7 +265,7 @@ setTimeout(() => {
     <>
       <Navbar />
     
-<div className="dashboard-container">        <h1>📊 AI-Powered PPT Maker</h1>              
+<div className="dashboard-container">        <h1>AI-Powered PPT Maker</h1>              
 <p className="subtext">Generate professional presentations instantly!</p>           <div className="previous-ppts">              
                     <FaHistory size={30} title="Previous PPTs" />              
                     <select onChange={(e) => loadPreviousPPT(JSON.parse(e.target.value))}>              
@@ -462,9 +468,9 @@ const textColor = getContrastTextColor(bgColor || "#fff");  return (
     </div>                
           </>                
         )}               
-           <div class="new">        <button onClick={saveSlides} className="save-button">💾 Save Slides</button>              
+           <div class="new">        <button onClick={saveSlides} className="save-button">Save Slides</button>              
     </div>              
-            <div class="down">              
+            <div class="down" ref={slidesRef} >              
 <Downloadppt topic={topic}  />              
 </div>                    
 <div style={{ margin: "1rem 0", backgroundColor: "#fff8e1", padding: "1rem", borderRadius: "8px", color: "#8d6e63", fontSize: "0.6rem" }}> 🔹You can easily edit the slide content by modifying the title and text within each slide. Additionally, you can personalize the appearance by selecting different themes, adjusting the title and content colors, and even adding or removing images. All changes are applied instantly, making it simple to create visually appealing slides with ease
