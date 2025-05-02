@@ -3,10 +3,11 @@
   padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
+padding-top:60px;
 }
  
 .blog-title {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
@@ -41,9 +42,10 @@
 }
 
 .post-content {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.8;
   color: #555;
+text-align:justify;
 }
 
 /* Responsive Styles */
@@ -61,11 +63,11 @@
   }
 
   .post-title {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 
   .post-content {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -83,7 +85,7 @@
   }
 
   .post-content {
-    font-size: 0.85rem;
+    font-size: 0.6rem;
   }
 }
  
