@@ -22,6 +22,8 @@ const Navbar = () => {
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/terms">Terms and Conditions</Link></li>
           <li><Link to="/policy">Privacy Policy</Link></li>
+      <li><Link to="/blogs">Blogs</Link></li>
+
         </ul>
 
         {/* Hamburger Menu (Visible on Mobile Only) */}
