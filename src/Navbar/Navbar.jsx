@@ -46,6 +46,7 @@ const Navbar = () => {
           <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
           <li><Link to="/terms" onClick={() => setIsMenuOpen(false)}>Terms and Conditions</Link></li>
           <li><Link to="/policy" onClick={() => setIsMenuOpen(false)}>Privacy Policy</Link></li>
+ <li><Link to="/blogs" onClick={() => setIsMenuOpen(false)}>Blogs</Link></li>
         </ul>
       </div>
     </nav>
