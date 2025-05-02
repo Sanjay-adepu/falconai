@@ -204,6 +204,10 @@ body {
   color: #555555;
   margin-bottom: 24px;
 }
+.blog-article p{
+  text-align: justify;
+  font-size:0.69rem;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -219,7 +223,10 @@ body {
   .tools-grid {
     flex-direction: column;
     align-items: center;
-  }
+  }.blog-article p{
+  text-align: justify;
+  font-size:0.69rem;
+}
 
   .section-heading {
     font-size: 1.6rem;
@@ -271,6 +278,10 @@ body {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.6;
+}
+.blog-article p{
+  text-align: justify;
+  font-size:0.56rem;
 }
 
 /* FAQ Section */
