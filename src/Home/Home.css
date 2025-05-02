@@ -391,6 +391,12 @@ body {
   color: #333;
   margin-bottom: 10px;
 }
+.case-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 30px;
+}
 
 
   .blog-card,
