@@ -1,5 +1,6 @@
 import React from "react";
 import "./AndroidTVControl.css";
+import Navbar from "../Navbar/Navbar.jsx";
 const blogs = [
   {
     title: "How AI is Transforming Presentation Design",
@@ -45,6 +46,8 @@ const blogs = [
 
 const BlogComponent = () => {
   return (
+<>
+<Navbar/>
     <div className="blog-section">
       <h2 className="blog-title">FalconAI Blog</h2>
       <div className="blog-list">
@@ -56,6 +59,7 @@ const BlogComponent = () => {
         ))}
       </div>
     </div>
+</>
   );
 };
 
