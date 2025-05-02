@@ -30,15 +30,12 @@ const themes = [
   { name: "Theme 3", value: "theme3", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567353/uploads/jhqemev3z0r8vpykio6y.jpg" },
 
   { name: "Theme 5", value: "theme5", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567417/uploads/phrtny0vrzzcslbzxre3.jpg" },
-  { name: "Theme 7", value: "theme7", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744567445/uploads/jftt5qvuluus4hi1daqw.jpg" },
-    
+  
       { name: "Theme 8", value: "theme8", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744716430/uploads/un2yddnwzvcjeminjwra.jpg" },
       
         { name: "Theme 9", value: "theme9", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744716452/uploads/dorltnmwfnutwjsub08g.jpg" },
         { name: "Theme 10", value: "theme10", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744716478/uploads/q0yjbnxojw9horxsc9yc.jpg" },
-   { name: "Theme 11", value: "theme11", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744716503/uploads/xdqhmx870xj2dpgt4lqj.jpg" },
-  { name: "Theme 12", value: "theme12", image: "https://res.cloudinary.com/dppiuypop/image/upload/v1744716599/uploads/okcnbwgyrpxunyeas2vf.jpg" },
-    
+   
   // Light & Soft Tones    
   { name: "Ivory White", value: "ivory", color: "#F8F9FA" },    
   { name: "Cloud Gray", value: "cloud-gray", color: "#EAEAEA" },    
