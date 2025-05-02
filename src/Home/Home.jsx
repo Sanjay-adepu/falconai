@@ -103,7 +103,7 @@ useEffect(() => {
     <section className="why-choose" data-aos="fade-right">          
           <h2 className="section-heading">Why Choose FalconAI?</h2>          
           <p className="why-description" data-aos="fade-up" data-aos-delay="300">      
-            FalconAI is built for students, educators, and professionals who need <strong>fast, high-quality</strong> presentations. Whether you're preparing for a <strong>business meeting, academic project, or research paper</strong>, FalconAI ensures your slides are polished and engaging.      
+            Falcon is built for students, educators, and professionals who need <strong>fast, high-quality</strong> presentations. Whether you're preparing for a <strong>business meeting, academic project, or research paper</strong>, FalconAI ensures your slides are polished and engaging.      
           </p>          
           <ul className="why-list">          
             <li><strong>🔹 Save Time:</strong> Generate fully designed slides <strong>in under a minute</strong>.</li>          
@@ -125,22 +125,22 @@ useEffect(() => {
     <p data-aos-delay="300">
       Artificial Intelligence (AI) is no longer a futuristic concept reserved for sci-fi movies and elite tech conferences; it is becoming a pervasive and transformative force in almost every industry—including the world of presentations. Whether you are preparing a keynote speech for a major industry event, a class presentation for a university seminar, or a sales pitch for potential investors, AI is redefining the very foundation of how we conceptualize, create, and deliver presentations.
     </p>
-    <p data-aos-delay="300">
+    <p data-aos-delay="350">
       Traditionally, building a compelling presentation was a multi-step ordeal. You would begin by selecting a template—often among hundreds of mediocre options. You'd then agonize over color schemes, ensuring text was readable yet vibrant, picking typography that matched the mood, and crafting transitions that weren't overly flashy or distractingly boring. Hours could vanish in the blink of an eye as you battled PowerPoint or Keynote, trying to fine-tune layouts or match photo aesthetics.
     </p>
-    <p data-aos-delay="300">
+    <p data-aos-delay="400">
       Now, AI tools like Falcon are cutting through these obstacles with precision. Falcon’s intelligent design assistant not only recommends layout structures based on your content but also intuitively understands the flow of your narrative, suggesting image placements, highlighting key messages, and even optimizing your slide transitions for maximum audience impact. Rather than spending 70% of your time on the superficial, Falcon empowers users to focus on the 30% that truly matters—their message and storytelling.
     </p>
-    <p data-aos-delay="300">
+    <p data-aos-delay="450">
       Moreover, Falcon uses deep learning to study thousands of successful presentation styles, dynamically adjusting its suggestions based on your goals. Whether you are aiming for a persuasive pitch, an educational workshop, or a storytelling session, Falcon molds itself to your unique needs. The AI doesn't just automate—it collaborates, becoming an invisible creative partner.
     </p>
-    <p data-aos-delay="300">
+    <p data-aos-delay="500">
       Perhaps the most groundbreaking impact of AI in presentations is its ability to democratize great design. Previously, only individuals with a background in graphic design could craft truly stunning presentations. Today, thanks to Falcon and similar platforms, anyone—regardless of design experience—can build professional-grade slideshows effortlessly. This shift is leveling the playing field across industries, allowing small startups to present like Fortune 500 companies and students to deliver like seasoned TED speakers.
     </p>
-    <p data-aos-delay="300">
+    <p data-aos-delay="600">
       Beyond aesthetics, Falcon’s AI also enhances accessibility. With automatic alt-text generation for images, real-time font readability checks, and inclusive color contrast recommendations, it ensures that presentations are not just beautiful but also accessible to all audience members, including those with visual impairments or cognitive differences.
     </p>
-    <p data-aos-delay="300">
+    <p data-aos-delay="6500">
       In the future, we can expect even deeper integrations where AI will anticipate audience reactions, adapt slides in real time based on engagement levels, and perhaps even suggest live tweaks to speakers as they present. Presentations will no longer be static artifacts but living, responsive dialogues between presenter and audience.
     </p>
     <p>
@@ -148,7 +148,7 @@ useEffect(() => {
     </p>
   </div>
 
-  <div className="blog-article" data-aos-delay="300">
+  <div className="blog-article" data-aos-delay="700">
     <h3>Top 5 Tips for Engaging Presentations</h3>
     <p>
       Creating an engaging presentation is both an art and a science. Even in a world of advanced tools like Falcon, the human touch—the ability to tell a story, to connect emotionally, to inspire action—remains irreplaceable. However, by mastering a few essential techniques, anyone can drastically elevate their presentation quality.
@@ -173,7 +173,7 @@ useEffect(() => {
     </p>
   </div>
 
-  <div className="blog-article" data-aos-delay="300">
+  <div className="blog-article" data-aos-delay="800">
     <h3>Design Trends for 2025 Presentations</h3>
     <p>
       As we move deeper into the 2020s, the landscape of presentation design continues to evolve at an exhilarating pace. Staying ahead of these trends is essential if you want your presentations to feel fresh, modern, and impactful. Here are some of the key design directions shaping 2025 and beyond:
@@ -198,7 +198,7 @@ useEffect(() => {
     </p>
   </div>
 
-  <div className="blog-article" data-aos-delay="300" >
+  <div className="blog-article" data-aos-delay="900" >
     <h3>Case for AI in Education</h3>
     <p>
       Education has always been about more than the transfer of knowledge; it’s about empowerment, critical thinking, creativity, and preparing learners for a dynamic world. Yet, outdated technologies and methodologies often weigh down teachers and students alike. Enter AI-powered solutions like Falcon, designed to revolutionize the educational experience.
