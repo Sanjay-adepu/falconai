@@ -1,119 +1,62 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from "react";
 
-const AirBridgeUploader = () => {
-  const [files, setFiles] = useState([]);
-  const [text, setText] = useState('');
-  const [link, setLink] = useState('');
-  const [code, setCode] = useState('');
-  const [qr, setQr] = useState('');
-  const [uploading, setUploading] = useState(false);
+const blogs = [
+  {
+    title: "How AI is Transforming Presentation Design",
+    content: "AI is revolutionizing how we design presentations. ".repeat(500),
+  },
+  {
+    title: "10 Ways to Maximize Productivity Using FalconAI",
+    content: "FalconAI offers many features that boost productivity. ".repeat(500),
+  },
+  {
+    title: "From Text to Slides: A Deep Dive Into AI-Powered Content Generation",
+    content: "The core of FalconAI lies in converting raw text into visual slides. ".repeat(500),
+  },
+  {
+    title: "Case Study: FalconAI in the Classroom",
+    content: "Educators are using FalconAI to simplify lesson planning. ".repeat(500),
+  },
+  {
+    title: "Business Presentations in the AI Era",
+    content: "AI is reshaping corporate presentations like never before. ".repeat(500),
+  },
+  {
+    title: "Design Tips When Using FalconAI",
+    content: "Effective design enhances the power of AI-generated content. ".repeat(500),
+  },
+  {
+    title: "How FalconAI Helps Researchers and Scholars",
+    content: "Researchers save hours using FalconAI for their presentations. ".repeat(500),
+  },
+  {
+    title: "The Future of Presentations: AI Trends in 2025",
+    content: "AI trends are driving the next generation of slideshows. ".repeat(500),
+  },
+  {
+    title: "Top 5 Customization Features of FalconAI",
+    content: "Customization is key to FalconAI's appeal. ".repeat(500),
+  },
+  {
+    title: "Why Speed Matters in Presentation Creation",
+    content: "Time-saving is a top reason users love FalconAI. ".repeat(500),
+  },
+];
 
-  const handleFileChange = (e) => {
-    setFiles([...e.target.files]);
-  };
-
-  const handleUpload = async () => {
-    if (!files.length && !text && !link) return alert("Please select a file or enter text/link");
-
-    const sessionId = Math.random().toString(36).substr(2, 6).toUpperCase();
-    const formData = new FormData();
-
-    files.forEach((file) => formData.append('files', file));
-    if (text) formData.append('text', text);
-    if (link) formData.append('link', link);
-
-    try {
-      setUploading(true);
-      const res = await axios.post('http://localhost:5000/upload', formData, {
-        headers: { 'x-session-id': sessionId },
-      });
-      setCode(res.data.code);
-
-      const qrRes = await axios.get(`http://localhost:5000/qrcode/${res.data.code}`);
-      setQr(qrRes.data.qr);
-    } catch (err) {
-      alert('Upload failed!');
-    } finally {
-      setUploading(false);
-    }
-  };
-
+const BlogComponent = () => {
   return (
-    <div style={styles.container}>
-      <h2>AirBridge Web</h2>
-
-      <input type="file" multiple onChange={handleFileChange} style={styles.input} />
-      <textarea
-        placeholder="Optional text note"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        style={styles.textarea}
-      />
-      <input
-        placeholder="Optional link"
-        value={link}
-        onChange={(e) => setLink(e.target.value)}
-        style={styles.input}
-      />
-
-      <button onClick={handleUpload} disabled={uploading} style={styles.button}>
-        {uploading ? 'Uploading...' : 'Send'}
-      </button>
-
-      {code && (
-        <div style={styles.result}>
-          <p><strong>Code:</strong> {code}</p>
-          {qr && <img src={qr} alt="QR Code" style={styles.qr} />}
-          <a href={`http://localhost:5000/download/${code}`} target="_blank" rel="noreferrer">Download Link</a>
-        </div>
-      )}
+    <div className="blog-section">
+      <h2 className="blog-title">FalconAI Blog</h2>
+      <div className="blog-list">
+        {blogs.map((blog, index) => (
+          <div key={index} className="blog-post">
+            <h3 className="post-title">{blog.title}</h3>
+            <p className="post-content">{blog.content}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
-const styles = {
-  container: {
-    maxWidth: 400,
-    margin: '50px auto',
-    padding: 20,
-    border: '1px solid #ddd',
-    borderRadius: 12,
-    fontFamily: 'Arial',
-  },
-  input: {
-    width: '100%',
-    marginBottom: 10,
-    padding: 10,
-    borderRadius: 8,
-    border: '1px solid #ccc',
-  },
-  textarea: {
-    width: '100%',
-    height: 100,
-    padding: 10,
-    marginBottom: 10,
-    borderRadius: 8,
-    border: '1px solid #ccc',
-  },
-  button: {
-    width: '100%',
-    padding: 12,
-    background: '#3f3d56',
-    color: 'white',
-    border: 'none',
-    borderRadius: 8,
-    cursor: 'pointer',
-  },
-  result: {
-    marginTop: 20,
-    textAlign: 'center',
-  },
-  qr: {
-    marginTop: 10,
-    width: 150,
-    height: 150,
-  },
-};
-
-export default AirBridgeUploader;
+export default BlogComponent;
