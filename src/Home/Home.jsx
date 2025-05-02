@@ -22,6 +22,8 @@ const Home = () => {
 ];
 
 const [currentIndex, setCurrentIndex] = useState(0);
+const [showPopup, setShowPopup] = useState(true);
+
 
 // Auto-slide effect
 useEffect(() => {
@@ -55,6 +57,27 @@ useEffect(() => {
 
      
       <Navbar />  
+
+
+{showPopup && (
+  <div className="popup-overlay">
+    <div className="popup-box" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+      <button
+        className="close-btn"
+        onClick={() => setShowPopup(false)}
+        aria-label="Close popup"
+      >
+        &times;
+      </button>
+      <h2 id="popup-title" className="popup-title">Terms & Privacy Policy</h2>
+      <p className="popup-text">
+        By continuing to use this site, you acknowledge that you have read and agreed to our
+        <Link to="/terms" className="popup-link"> Terms of Service</Link> and
+        <Link to="/privacy" className="popup-link"> Privacy Policy</Link>.
+      </p>
+    </div>
+  </div>
+)}
 
       <div className="home-page">          
         {/* Hero Section */}          
