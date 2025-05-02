@@ -296,35 +296,51 @@ useEffect(() => {
 
   
 
-        {/* Case Study Section */}          
-              <section className="case-studies"data-aos="fade-up" data-aos-delay="200" >          
-          <h2 className="section-heading">Case Studies: Real User Success</h2>          
+                {/* Case Study Section */}
+     <section className="case-studies" data-aos="fade-up">
+  <h2 className="section-heading">Case Studies: Real User Success</h2>
 
-          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="200">
-            <h4>Startup Founder Cuts Deck Creation Time by 90%</h4>
-            <p>Raj, a startup founder in Bangalore, used FalconAI to generate his investor pitch deck in minutes—freeing up valuable time to polish his pitch and focus on business strategy.</p>
-          </div>
+  <div className="case-study-item" data-aos="fade-up">
+    <h4>Startup Founder Cuts Deck Creation Time by 90%</h4>
+    <p>Raj, an innovative startup founder based in Bangalore, had a vision — to revolutionize the logistics industry using AI. However, when it came time to raise funding, he faced a common entrepreneurial challenge: creating a compelling, professional investor pitch deck. Initially, Raj spent countless late nights agonizing over slide layouts, adjusting fonts, aligning images, and trying to create a cohesive narrative that would impress investors. Frustration mounted as deadlines loomed, and the stress began to take a toll on his overall productivity.</p>
+    <p>Then Raj discovered Falcon. Within minutes of signing up, he realized how Falcon’s intuitive layout builder could help him automate the design process. With dozens of investor-tested templates and AI-assisted content suggestions, Raj could focus entirely on perfecting his business narrative rather than losing himself in endless design tweaks. Falcon’s smart structuring tools guided him through each step — from outlining the problem and solution, through market sizing, to competitive analysis — ensuring a logical flow investors expect but few founders naturally produce.</p>
+    <p>Thanks to Falcon, Raj cut the deck creation time by over 90%. What previously took weeks of painstaking effort now required just two focused evenings. More importantly, the confidence Raj gained from having a professionally structured deck allowed him to pitch boldly and passionately. Within three weeks of using his new deck, Raj secured $500,000 in seed funding from prominent angel investors. The investors later mentioned that the clarity and impact of his presentation were decisive factors in their investment decision.</p>
+    <p>Today, Raj credits Falcon with not just saving time, but dramatically accelerating his company’s journey. He recommends it to every entrepreneur he meets, calling it "an absolute must-have weapon for any founder serious about fundraising success."</p>
+  </div>
 
-          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="300">
-            <h4>Teacher Saves 6 Hours a Week</h4>
-            <p>Meena, a high school teacher, now prepares lesson slides in minutes. With FalconAI’s intuitive interface, she focuses more on engaging students and less on slide design.</p>
-          </div>
+  <div className="case-study-item" data-aos="fade-up">
+    <h4>Teacher Saves 6 Hours a Week</h4>
+    <p>Meena, a dedicated high school teacher from Pune, always believed in providing her students with the best possible learning materials. However, the process of preparing engaging slide decks for her classes was grueling. Each Sunday evening, she found herself spending nearly six hours designing slides for the upcoming week — hours that she could have spent relaxing, planning more dynamic activities, or even just enjoying time with her family.</p>
+    <p>After hearing about Falcon from a fellow educator, Meena decided to give it a try. She was amazed at how quickly she could transform her lesson plans into polished, visually appealing presentations. Falcon’s education-specific templates offered pre-built structures for lessons, quizzes, and discussion prompts, while its drag-and-drop media tools made it easy to insert diagrams, videos, and real-world examples without needing any technical skills.</p>
+    <p>What once took six stressful hours now took just one. Even better, her students began to notice the difference. Lessons became more visually stimulating and interactive, increasing student engagement and participation. Meena’s newfound efficiency allowed her to introduce "flex learning" periods, where students explored topics independently using decks she crafted in minutes. Her principal, impressed by the improvement in classroom dynamics, invited Meena to lead a workshop for other teachers on how to use Falcon effectively.</p>
+    <p>Over time, Meena reported not just saving 6 hours weekly, but feeling a renewed passion for teaching. She even launched a side project, creating and selling educational slide templates to other teachers — a venture that now earns her a steady stream of passive income. For Meena, Falcon wasn’t just a tool; it was a catalyst that elevated her career and enriched her personal life.</p>
+  </div>
 
-          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="400">
-            <h4>Engineering Student Impresses Professors</h4>
-            <p>Ankit used FalconAI for his final year project. With professional design and AI-structured flow, his presentation stood out and got top marks from his professors.</p>
-          </div>
+  <div className="case-study-item" data-aos="fade-up">
+    <h4>Engineering Student Impresses Professors</h4>
+    <p>Ankit, an ambitious final-year engineering student from Delhi, faced a familiar yet daunting task: his senior project presentation. Competition among his peers was fierce, and Ankit knew that beyond the strength of his technical work, presentation quality would play a crucial role in determining who would receive top honors and job offers from recruiters.</p>
+    <p>While his friends were struggling with basic PowerPoint templates and manual slide formatting, Ankit found Falcon. The platform’s academic project templates, combined with its AI-powered storytelling guide, helped him map out his presentation logically and persuasively. The automated visual hierarchy tools ensured that each slide emphasized the most critical information — a subtle but powerful technique that left a lasting impression on audiences.</p>
+    <p>On the day of his presentation, Ankit's slides looked crisp, modern, and professional. As he walked through his project on renewable energy storage systems, the audience — professors, industry experts, and fellow students — remained captivated. His data visualizations, animated transitions, and clear information flow demonstrated not just his technical competence but also his communication prowess.</p>
+    <p>After his talk, several professors personally commended him, noting that his presentation was one of the best they had seen in years. Recruiters approached him with internship offers on the spot. Ultimately, Ankit graduated at the top of his class and secured a coveted position at a leading clean energy firm — achievements he directly attributes, in part, to the professional polish Falcon helped him deliver when it mattered most.</p>
+  </div>
 
-          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="500">
-            <h4>Marketing Team Boosts Productivity</h4>
-            <p>A 5-member marketing team used FalconAI to create client presentations 3x faster. They’ve integrated it into their workflow and now deliver designs with faster turnaround.</p>
-          </div>
+  <div className="case-study-item" data-aos="fade-up">
+    <h4>Marketing Team Boosts Productivity</h4>
+    <p>Imagine a bustling marketing agency in Mumbai — five talented individuals juggling multiple client projects at any given time. Despite their creativity, they consistently struggled to deliver polished client pitch decks on schedule. Each deck required at least three rounds of design revisions, often leading to late-night marathons and tense internal reviews.</p>
+    <p>When the team integrated Falcon into their workflow, everything changed. By leveraging Falcon’s branded templates and collaborative editing tools, they streamlined the entire deck creation process. No more manual formatting. No more endless debates over font choices or color palettes. Falcon’s brand kit integration ensured every deck stayed visually consistent and professionally aligned with each client's brand identity.</p>
+    <p>In the first month alone, the agency reported a 70% reduction in deck preparation time. Proposals that once took three full days to create were now completed in under a day — with better quality outcomes. The creative team could now spend more time ideating and less time polishing. Clients noticed too; customer satisfaction scores rose sharply, and repeat business increased by over 30% within the next two quarters.</p>
+    <p>Perhaps most importantly, team morale improved dramatically. "Falcon took the grunt work out of our creative process," said Priya, the agency’s creative director. "Now we focus on what we love — creating bold ideas and strategies — not endless formatting."</p>
+  </div>
 
-          <div className="case-study-item"         data-aos="fade-up" data-aos-delay="600">
-            <h4>Freelancer Wins More Clients</h4>
-            <p>Sana, a freelance content creator, added presentation services to her portfolio using FalconAI. She now delivers presentations in record time and has doubled her client base.</p>
-          </div>
-        </section>          
+  <div className="case-study-item" data-aos="fade-up">
+    <h4>Freelancer Wins More Clients</h4>
+    <p>Sana, a freelance copywriter from Hyderabad, faced stiff competition. Thousands of freelancers offered writing services online, and standing out was becoming harder by the day. In a crowded marketplace, presentation often makes the difference between winning a client or losing the bid. Recognizing this, Sana decided to offer a new service: creating complete sales decks and pitch presentations alongside her writing packages.</p>
+    <p>With no formal design background, Sana worried initially about whether she could deliver high-quality results. But Falcon changed everything. Its simple drag-and-drop editor, expansive library of design assets, and AI slide generator meant she could quickly create professional decks tailored to each client’s needs. Each deck looked polished, on-brand, and persuasive — perfect complements to her compelling copywriting.</p>
+    <p>The impact was immediate. Clients loved the one-stop-shop service. Within three months, Sana’s proposal acceptance rate doubled. Within a year, her average contract size had tripled, allowing her to raise her rates confidently. Better yet, she started attracting bigger clients — startups preparing for fundraising, corporate teams needing internal training materials, even established brands looking to refresh their sales enablement assets.</p>
+    <p>Today, Sana runs a six-figure freelance business, managing a small team of subcontractors and focusing on high-ticket projects. She frequently credits Falcon as the "secret weapon" that allowed her to scale so quickly and successfully in an ultra-competitive space. She even coaches new freelancers, teaching them how to leverage tools like Falcon to build premium service offerings with minimal overhead and maximum client value.</p>
+  </div>
+
+</section>        
 
         
 
