@@ -73,7 +73,7 @@ useEffect(() => {
       <p className="popup-text">
         By continuing to use this site, you acknowledge that you have read and agreed to our
         <Link to="/terms" className="popup-link"> Terms of Service</Link> and
-        <Link to="/privacy" className="popup-link"> Privacy Policy</Link>.
+        <Link to="/policy" className="popup-link"> Privacy Policy</Link>.
       </p>
     </div>
   </div>
