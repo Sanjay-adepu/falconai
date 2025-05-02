@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Left: Branding */}
         <div className="footer-brand">
-          <h3>FalconAI</h3>
+          <h3>Falcon</h3>
           <p>Next-gen AI tool for effortless presentations.</p>
         </div>
 
