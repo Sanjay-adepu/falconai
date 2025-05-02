@@ -103,7 +103,7 @@ Productivity today is about working smarter, not harder. Falcon enables users to
 
 By mastering these ten features, you can unlock new levels of speed, efficiency, and polish in your presentation workflow. It’s not just about saving time—it’s about elevating your output with less effort.
 "}
-  
+
 ];
 
 const BlogComponent = () => {
