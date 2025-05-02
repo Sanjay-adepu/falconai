@@ -102,9 +102,7 @@ Conclusion
 Productivity today is about working smarter, not harder. Falcon enables users to skip repetitive design tasks and jump straight into strategic thinking and storytelling. Whether you're a student preparing for a seminar, a marketer pitching a new idea, or a professional creating weekly reports—Falcon AI has your back.
 
 By mastering these ten features, you can unlock new levels of speed, efficiency, and polish in your presentation workflow. It’s not just about saving time—it’s about elevating your output with less effort.
-"
- ,
-  }
+"}
   
 ];
 
