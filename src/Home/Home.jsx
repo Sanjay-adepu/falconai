@@ -61,7 +61,7 @@ useEffect(() => {
         <section className="hero">          
           <h1 className="hero-heading"> Create AI-Generated Presentations in Less Than 1 Minute!</h1>          
           <p className="hero-subtext">          
-            Falcon AI is an AI-powered platform that instantly converts text into professional presentations, saving hours of manual work. Whether you're a student, educator, or business professional, FalconAI helps you create <strong>high-quality, customizable</strong> presentations in under a minute! With intuitive design tools, smart content suggestions, and real-time editing capabilities, FalconAI empowers you to focus on ideas while we handle the visuals—making your workflow faster, smarter, and more impactful.
+            Falcon AI is an AI-powered platform that instantly converts text into professional presentations, saving hours of manual work. Whether you're a student, educator, or business professional, FalconAI helps you create <strong>high-quality, customizable</strong> presentations in under a minute! With intuitive design tools, smart content suggestions, and real-time editing capabilities, FalconAI empowers you to focus on ideas while we handle the visuals—making your workflow faster, smarter, and more impactful.thousands of users globally trust Falcon for its intuitive interface, intelligent design algorithms, and unmatched reliability. Plus, every generated presentation is fully customizable, so you remain in complete creative control — modify images, layouts, colors, and more within seconds. With Falcon, you don't just create presentations — you craft unforgettable stories.
           </p>
           <Link to="/dashboard" className="btn-primary">Get Started</Link>          
         </section>         
