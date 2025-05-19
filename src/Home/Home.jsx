@@ -26,16 +26,7 @@ const [showPopup, setShowPopup] = useState(true);
 
 
 
-  // Inject banner ad script
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//confusedassociation.com/b.X/VTsCdyG/lS0ZY/W/cj/Be_mD9Qu/ZWUtllkkP/TCYTzjNkDIks4-NxT_Q/tVNojmMC0ZO/TEg/1BNOQd";
-    script.async = true;
-    script.referrerPolicy = "no-referrer-when-downgrade";
-    document.body.appendChild(script);
-  }, []);
-
-
+  
 
 
 // Auto-slide effect
